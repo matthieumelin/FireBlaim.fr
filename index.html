@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -14,11 +14,17 @@
 <body>
     <header class="header">
         <nav class="navbar">
-            <h1 class="navbar_brand">FireBlaim</h1>
+            <img src="./assets/images/logo_white.png" class="navbar_brand" alt="Logo" />
             <ul class="navbar_menu">
-                <li href="#" class="navbar_menu_link" data-active="true">Mes services</li>
-                <li href="#" class="navbar_menu_link" data-active="false">Contact</li>
-                <li href="#" class="navbar_menu_link" data-active="false">Mon espace client</li>
+                <li class="navbar_menu_item">
+                    <a href="#" class="navbar_menu_item_link" data-active="true">Mes services</a>
+                </li>
+                <li class="navbar_menu_item">
+                    <a href="#" class="navbar_menu_item_link" data-active="false">Contact</a>
+                </li>
+                <li class="navbar_menu_item">
+                    <a href="#" class="navbar_menu_item_link" data-active="false">Mon espace client</a>
+                </li>
             </ul>
         </nav>
         <div class="row">
@@ -32,7 +38,7 @@
     </header>
 
     <main class="main">
-        <section class="section">
+        <section class="section about">
             <h2 class="section_title">Qui suis-je ?</h2>
             <div class="row">
                 <img src="./assets/images/avatar.png" alt="Logo FireBlaim" class="avatar_image">
@@ -47,7 +53,7 @@
             </div>
         </section>
 
-        <section class="section">
+        <section class="section services">
             <h2 class="section_title">Mes services</h2>
             <p class="section_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae repellendus repellat fuga, quibusdam laborum incidunt cupiditate aliquid perspiciatis hic, eius pariatur autem ea dolore distinctio beatae deleniti eaque, reiciendis ab!</p>
             <div class="row">
@@ -90,11 +96,11 @@
             </div>
         </section>
 
-        <section class="section ">
+        <section class="section answers">
             <h2 class="section_title ">Questions fréquentes</h2>
             <p class="section_description ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae repellendus repellat fuga, quibusdam laborum incidunt cupiditate aliquid perspiciatis hic, eius pariatur autem ea dolore distinctio beatae deleniti eaque, reiciendis ab!</p>
-            <div class="columns ">
-                <div class="answer " data-active="true">
+            <div class="answers_container ">
+                <div class="answer " data-active="false">
                     <div class="answer_header "><i class="answer_header_icon fa-solid fa-arrow-right"></i> Quel est le temps de livraison ?</div>
                     <div class="answer_body ">Cela dépend du travail demandé mais généralement ça prend une semaine pour un plugin de mode de jeu ou un mod forge.</div>
                 </div>
@@ -115,19 +121,26 @@
 
         <section class="section banner ">
             <img src="./assets/images/wave.png " alt="Vague " class="banner_image ">
-            <h3 class="banner_title ">Alors, convaincu ?</h3>
-            <a href="# " class="button_link outline ">Voir les services</a>
+            <img src="./assets/images/human.png" alt="Homme" class="banner_avatar_image">
+            <div class="banner_container">
+                <h3 class="banner_title ">Alors, convaincu ?</h3>
+                <a href="# " class="button_outline ">Voir les services</a>
+            </div>
         </section>
     </main>
 
     <footer class="footer ">
-        <h2 class="footer_title ">FireBlaim</h2>
-        <p class="footer_description ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, suscipit incidunt! Nam eum exercitationem sint, ea et consectetur numquam iste suscipit consequuntur, quidem expedita. Voluptatem, porro. Cum quia labore nemo.</p>
+        <div class="footer_container">
+            <div class="footer_about">
+                <img src="./assets/images/logo_white.png" class="footer_about_brand" alt="Logo" />
+                <p class="footer_about_description ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, suscipit incidunt! Nam eum exercitationem sint, ea et consectetur numquam iste suscipit consequuntur, quidem expedita. Voluptatem, porro. Cum quia labore nemo.</p>
+            </div>
+            <section class="section footer_medias ">
+                <h3 class="footer_medias_title ">Réseaux sociaux</h3>
+                <a href="# " class="button_outline ">Suivre @FireBlaim                         <i class="fa-brands fa-twitter "></i>            </a>
+            </section>
+        </div>
         <p class="footer_copyright ">FireBlaim.fr © 2022</p>
-        <section class="section footer ">
-            <h3 class="section_footer_title ">Réseaux sociaux</h3>
-            <a href="# " class="button_link outline ">Suivre @FireBlaim                         <i class="fa-brands fa-twitter "></i>            </a>
-        </section>
     </footer>
 </body>
 
